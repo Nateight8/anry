@@ -27,8 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${body.className} ${heading.variable}`}>
         <Header />
-        {children}
-        {/* <Footer /> */}
+        <main className="mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

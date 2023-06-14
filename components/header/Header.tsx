@@ -5,24 +5,18 @@ import { Button, buttonVariants } from "../ui/button";
 import { usePathname } from "next/navigation";
 import { Pivot as Hamburger } from "hamburger-react";
 import { P } from "../ui/paragraph";
-type Props = {};
 
-const Header = (props: Props) => {
+const Header = () => {
   const [isOpen, setOpen] = useState(false);
 
-  //   console.log(isOpen);
-
   return (
-    <nav className="w-full bg-background fixed top-0 z-50">
+    <nav className="w-full bg-background fixed top-0 z-50 shadow-md shadow-slate-700/30">
       <div className="mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6 relative ">
         <div className="">
           <div className="flex items-center justify-between">
+            <P>Dágé | Persist</P>
             <div className="hidden lg:block">
               <Navlinks />
-            </div>
-
-            <div className="hidden lg:block leading-[0]">
-              <RightLinks />
             </div>
           </div>
           <div className="flex lg:hidden items-center justify-between relative">
@@ -45,19 +39,24 @@ export default Header;
 function Navlinks() {
   const links = [
     {
-      label: "HOME",
+      label: "Home",
       url: "/",
       id: "s",
     },
     {
-      label: "TOKENOMIC",
+      label: "About",
       url: "/",
       id: "Sa",
     },
     {
-      label: "ROADMAP",
+      label: "Experience",
       url: "/",
-      id: "Sa",
+      id: "Sad",
+    },
+    {
+      label: "Skillset",
+      url: "/",
+      id: "Sae",
     },
   ];
 
@@ -80,43 +79,6 @@ function Navlinks() {
           </Link>
         </li>
       ))}
-    </ul>
-  );
-}
-function RightLinks() {
-  const links = [
-    {
-      label: "ABOUT",
-      url: "/",
-      id: "s",
-    },
-    {
-      label: "JOIN US",
-      url: "/",
-      id: "Sa",
-    },
-  ];
-
-  const pathname = usePathname();
-
-  return (
-    <ul className="flex">
-      {links.map((link) => (
-        <li key={link.id}>
-          <Link
-            style={
-              pathname === link.url
-                ? { color: "white" }
-                : { color: "rgba(225, 224, 232, 0.4)" }
-            }
-            className={buttonVariants({ variant: "link" })}
-            href={link.url}
-          >
-            {link.label}
-          </Link>
-        </li>
-      ))}
-      <Button variant="buy">Connect</Button>
     </ul>
   );
 }

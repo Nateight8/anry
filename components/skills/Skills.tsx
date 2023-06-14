@@ -42,6 +42,9 @@ const Skills = (props: Props) => {
             <li className={pVariants({ className: "font-heading" })}>
               Telegram marketting (mass DM)
             </li>
+            <li className={pVariants({ className: "font-heading" })}>
+              Content creation
+            </li>
           </ul>
         </div>
       </div>

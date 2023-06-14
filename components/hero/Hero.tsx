@@ -9,7 +9,7 @@ function Hero({}: Props) {
     <div className="h-screen flex items-center w-full ">
       <div className="">
         <H2 className="mb-4">Dágé | Persist</H2>
-        <div className="flex space-x-4 items-center">
+        <div className="flex sm:space-x-4 sm:items-center items-start flex-col sm:flex-row">
           <Link
             className="flex items-center space-x-2"
             href="https://twitter.com/Only1Dionysus"

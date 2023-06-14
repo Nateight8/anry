@@ -38,7 +38,7 @@ function Projects({}: Props) {
             modules={[Pagination]}
             className="mySwiper"
           >
-            {[1, 2, 3, 4].map((pj) => (
+            {[1, 2, 3, 4, 4].map((pj) => (
               <SwiperSlide key={pj} className="w-full p-6 ">
                 <div className="w-full">
                   <AspectRatio ratio={1 / 1}>

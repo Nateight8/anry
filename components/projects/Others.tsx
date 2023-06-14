@@ -20,7 +20,7 @@ function Others({}: Props) {
           <TabsTrigger value="password">Proof of work</TabsTrigger>
         </TabsList>
         <TabsContent value="project">
-          <div className="p-4 grid grid-cols-7 w-full gap-6">
+          <div className="p-4 grid  grid-cols-7 w-full gap-6">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((pj) => (
               <div key={pj} className="w-full">
                 <AspectRatio ratio={1 / 1}>

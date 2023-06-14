@@ -5,7 +5,7 @@ import { HTMLAttributes, forwardRef } from "react";
 const h2Variants = cva("font-heading ", {
   variants: {
     size: {
-      default: "text-7xl",
+      default: "text-6xl md:text-7xl",
     },
   },
   defaultVariants: {

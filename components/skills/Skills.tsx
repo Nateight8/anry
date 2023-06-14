@@ -6,7 +6,10 @@ type Props = {};
 
 const Skills = (props: Props) => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center">
+    <section
+      id="skills"
+      className="min-h-screen w-full flex items-center justify-center"
+    >
       <div className="flex flex-col space-y-7 lg:space-y-0 lg:flex-row justify-between w-full max-w-4xl">
         <div className="max max-w-md">
           <H2>Skillset</H2>
@@ -42,7 +45,7 @@ const Skills = (props: Props) => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

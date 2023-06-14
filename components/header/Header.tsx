@@ -14,14 +14,13 @@ const Header = () => {
       <div className="mx-auto max-w-screen-2xl p-4 md:px-6 md:py-6 relative ">
         <div className="">
           <div className="flex items-center justify-between">
-            <P>Dágé | Persist</P>
+            <P className="hidden lg:block">Dágé | Persist</P>
             <div className="hidden lg:block">
               <Navlinks />
             </div>
           </div>
           <div className="flex lg:hidden items-center justify-between relative">
-            <P>Mobile</P>
-
+            <P>Dágé | Persist</P> {/* <P>Mobile</P> */}
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
         </div>
@@ -40,22 +39,22 @@ function Navlinks() {
   const links = [
     {
       label: "Home",
-      url: "/",
+      url: "#",
       id: "s",
     },
     {
       label: "About",
-      url: "/",
+      url: "#about",
       id: "Sa",
     },
     {
       label: "Experience",
-      url: "/",
+      url: "#experience",
       id: "Sad",
     },
     {
       label: "Skillset",
-      url: "/",
+      url: "#skills",
       id: "Sae",
     },
   ];
@@ -66,7 +65,7 @@ function Navlinks() {
     <ul className="flex">
       {links.map((link) => (
         <li key={link.id}>
-          <Link
+          <a
             style={
               pathname === link.url
                 ? { color: "white" }
@@ -76,7 +75,7 @@ function Navlinks() {
             href={link.url}
           >
             {link.label}
-          </Link>
+          </a>
         </li>
       ))}
     </ul>

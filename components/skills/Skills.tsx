@@ -21,30 +21,25 @@ const Skills = (props: Props) => {
         </div>
         <div className="">
           <ul className="space-y-4">
-            <li className={pVariants({ className: "font-heading" })}>
-              Discord setup
-            </li>
-            <li className={pVariants({ className: "font-heading" })}>
-              Web Design
-            </li>
-            <li className={pVariants({ className: "font-heading" })}>
-              Frontend Dev
-            </li>
-            <li className={pVariants({ className: "font-heading" })}>
-              Discord bot (discord.js)
-            </li>
-            <li className={pVariants({ className: "font-heading" })}>
-              Ama host
-            </li>
-            <li className={pVariants({ className: "font-heading" })}>
-              Twitter marketting
-            </li>
-            <li className={pVariants({ className: "font-heading" })}>
-              Telegram marketting (mass DM)
-            </li>
-            <li className={pVariants({ className: "font-heading" })}>
-              Content creation
-            </li>
+            {[
+              "Web Design",
+              "Frontend Dev",
+              "Discord Dev(discord.js)",
+              "Ama Host",
+              "Twitter Marketting",
+              "Telegram Marketting",
+              "Content creation",
+            ].map((item) => (
+              <li
+                key={item}
+                className={pVariants({
+                  className:
+                    "font-heading hover:text-slate-100 transition-all duration-750 hover:cursor-pointer text-slate-100/75 ",
+                })}
+              >
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
       </div>

@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 type Props = {};
 import { Pagination } from "swiper";
 import { P } from "../ui/paragraph";
-import ImageHover from "../hero/ImageHover";
+
 function Projects({}: Props) {
   const projects = [
     {

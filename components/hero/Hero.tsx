@@ -1,7 +1,6 @@
 import React from "react";
 import { H2 } from "../ui/heading";
 import Link from "next/link";
-import { P } from "../ui/paragraph";
 
 type Props = {};
 
@@ -9,8 +8,7 @@ function Hero({}: Props) {
   return (
     <div className="h-screen flex items-center w-full ">
       <div className="">
-        {/* <P className="pb-4">I be only one</P> */}
-        <H2 className="mb-4"> IDan | Dágé</H2>
+        <H2 className="mb-4">Dágé | Persist</H2>
         <div className="flex sm:space-x-4 sm:items-center items-start flex-col sm:flex-row">
           <Link
             className="flex items-center space-x-2"

@@ -76,7 +76,10 @@ function Projects({}: Props) {
           <span className="hidden sm:block">Projects</span>
           <span className="block sm:hidden">Pjs</span>
         </H2>
-        <P>Projects i have worked for in no particular order</P>
+        <P>
+          In no particular order, here are some of the projects I&rsquo;ve had
+          the privilege to work with:
+        </P>
       </div>
       {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3"> */}
       <div className="s space-y-[1px]">

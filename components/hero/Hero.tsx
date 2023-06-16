@@ -9,8 +9,8 @@ function Hero({}: Props) {
   return (
     <div className="h-screen flex items-center w-full ">
       <div className="">
-        <P className="pb-4">I be only one</P>
-        <H2 className="mb-4"> Idan | Dágé</H2>
+        {/* <P className="pb-4">I be only one</P> */}
+        <H2 className="mb-4"> IDan | Dágé</H2>
         <div className="flex sm:space-x-4 sm:items-center items-start flex-col sm:flex-row">
           <Link
             className="flex items-center space-x-2"

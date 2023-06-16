@@ -10,52 +10,42 @@ import "swiper/css/pagination";
 type Props = {};
 import { Pagination } from "swiper";
 function Projects({}: Props) {
+  const projects = [
+    {
+      id: "sa",
+      image: "/1.jpg",
+    },
+    {
+      id: "sas",
+      image: "/2.jpg",
+    },
+    {
+      id: "sass",
+      image: "/3.jpg",
+    },
+    {
+      id: "ssass",
+      image: "/4.jpg",
+    },
+    {
+      id: "ssassq",
+      image: "/5.jpg",
+    },
+  ];
+
   return (
-    <section id="experience" className="">
-      <div className="min-h-screen w-full flex items-center">
-        <div className="w-full">
-          <H2 className="mb-8">Top Pjs</H2>
-          <Swiper
-            slidesPerView={1.6}
-            spaceBetween={8}
-            pagination={{
-              clickable: true,
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
-              //   1024: {
-              //     slidesPerView: 4,
-              //     spaceBetween: 50,
-              //   },
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            {[1, 2, 3, 4, 4].map((pj) => (
-              <SwiperSlide key={pj} className="w-full p-6 ">
-                <div className="w-full">
-                  <AspectRatio ratio={1 / 1}>
-                    <Image
-                      src="/est.jpeg"
-                      fill
-                      alt=""
-                      className="rounded-3xl object-cover"
-                    />
-                  </AspectRatio>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+    <section id="experience" className="my-20">
+      <H2 className="mb-3 ">
+        <span className="hidden sm:block">Projects</span>
+        <span className="block sm:hidden">Pjs</span>
+      </H2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        {projects.map((item) => (
+          <div className="bg-red-100 h-[30vh] relative" key={item.id}>
+            <Image src={item.image} alt="" fill />
+          </div>
+        ))}
       </div>
-      {/* <Others /> */}
     </section>
   );
 }

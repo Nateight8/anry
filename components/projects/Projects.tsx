@@ -16,6 +16,18 @@ function Projects({}: Props) {
     {
       id: "sa",
       image: "/1.jpg",
+      name: "Zero1Token",
+      role: "community manager",
+    },
+    {
+      id: "sa",
+      image: "/1.jpg",
+      name: "ZeroXFreelance",
+      role: "community manager",
+    },
+    {
+      id: "sa",
+      image: "/1.jpg",
       name: "Anonymous Fox",
       role: "community manager",
     },

@@ -26,8 +26,8 @@ const Skills = (props: Props) => {
               "Frontend Dev",
               "Discord Dev(discord.js)",
               "Ama Host",
-              "Twitter Marketting",
-              "Telegram Marketting",
+              "Twitter Marketing",
+              "Telegram Marketing",
               "Content creation",
             ].map((item) => (
               <li
